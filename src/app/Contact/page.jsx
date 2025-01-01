@@ -20,7 +20,7 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Message sent successfully");
-      
+      alert("Message sent successfully");
       event.target.reset();
     } else {
     
