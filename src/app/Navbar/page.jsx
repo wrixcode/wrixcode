@@ -1,8 +1,8 @@
 
 'use client'
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState} from 'react'
+import Image from 'next/image';
 import { FaBars, FaTimes } from 'react-icons/fa';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -24,8 +24,14 @@ const Navbar = () => {
   return (
     <div className='absolute w-full top-0 left-0  z-10'>
         <div className='container flex px-6 md:px-20 lg:px-28  py-4 justify-between items-center ' >
-<h1  className='text-white text-3xl md:text-4xl'>
-  <img className='w-24 md:w-36' src="./logo2.png" alt="" />
+<h1  className=''>
+<Image
+      src="/logo2.png"
+     
+      width={100}
+      height={100}
+      alt="Picture of the author"
+    />
 </h1>
 <ul className='hidden md:flex gap-8'>
     <Link  href="/" className='cursor-pointer hover:text-gray-400 text-white'>Home</Link>
