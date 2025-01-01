@@ -33,7 +33,7 @@ const Contact = () => {
     <div className='bg-[#101125] '
  
     >
-         <h1 className='text-4xl font-bold  text-center text-white pt-9 pb-9'> Contact Us</h1>
+         <h1 className='text-4xl font-bold   text-center text-white pt-16'> Contact Us</h1>
     
     <form onSubmit={onSubmit} className="max-w-2xl mx-auto px-5 text-gray-600 pt-8">
       <div className="flex flex-wrap">
