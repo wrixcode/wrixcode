@@ -24,10 +24,10 @@ const Navbar = () => {
   return (
     <div className='absolute w-full top-0 left-0  z-10'>
         <div className='container flex px-6 md:px-20 lg:px-28  py-4 justify-between items-center ' >
-<h1  className=''>
+<h1  >
 <Image
       src="/logo2.png"
-     
+     className='w-auto h-auto'
       width={100}
       height={100}
       alt="Picture of the author"
