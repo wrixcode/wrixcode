@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import { toast } from 'react-toastify';
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -20,12 +19,12 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("");
-      toast.success("Message sent successfully")
+      setResult("Message sent successfully");
+      
       event.target.reset();
     } else {
     
-      toast.error("error")
+      console.log("error")
       setResult(data.message);
     }
   };
